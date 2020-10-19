@@ -148,10 +148,10 @@ app.post("/api/favorites", (req, res) => {
       //  console.log(animal.breeds.unknown);
        console.log(animal.url);
       console.log(`=======================`);
-
+      res.json(petData.data.animals);
       });
 
-      res.json(petData.data.animals);
+      
 
     })
   })
