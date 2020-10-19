@@ -88,6 +88,7 @@ app.post("/api/favorites", (req, res) => {
   db.Pet.create({
     name: req.body.name,
     gender: req.body.gender,
+    breed: req.body.breed,
     age: req.body.age,
     size: req.body.size,
     url: req.body.url,
@@ -148,10 +149,10 @@ app.post("/api/favorites", (req, res) => {
       //  console.log(animal.breeds.unknown);
        console.log(animal.url);
       console.log(`=======================`);
-      res.json(petData.data.animals);
+      
       });
 
-      
+      res.json(petData.data.animals);
 
     })
   })
