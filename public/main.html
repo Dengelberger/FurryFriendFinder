@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/stylesheets/style.css" media="screen" charset="utf-8">
+  <title>Pet Finder App --  Search for a pet!</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-dark">
+    <a class="navbar-brand" href="/logout">
+      Logout
+    </a>
+    <a href="/members"><button class="btn btn-outline-warning my-2 my-sm-0 searchAgain" type="submit">Search Again!</button></a>
+    <a href="./favorites"><button class="btn btn-outline-warning my-2 my-sm-0" type="submit">My Favorites</button></a>
+  </nav>
+
+  <div class="container">
+    <!--BEGINNING OF DIV CONTAINER-->
+
+    <div class="row searchBox">
+      <div class="col-auto offset-2 mx-auto enterSearch">
+        <h2 style="margin-top:20px">Search for a New Buddy!</h2>
+
+        <div class="row offset-1">
+          <form class="">
+            <div class="form-group">
+              <p>
+                <strong>Search Area</strong>
+                <input class="form-control" id="zipCode" placeholder="Please enter zipcode">
+              </p>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <p>
+                  <strong>Pet Type</strong>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="petType" id="exampleRadios1" value="Dog">
+                  <label class="form-check-label">
+                    Dog
+                  </label></div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="petType" id="exampleRadios1" value="Cat">
+                  <label class="form-check-label">
+                    Cat
+                  </label>
+                </div>
+                </p>
+              </div>
+
+              <div class="col-md-6">
+                <p>
+                  <strong>Gender</strong>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gender" id="male" value="Male">
+                  <label class="form-check-label"> Male</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gender" id="female" value="Female">
+                  <label class="form-check-label">
+                    Female
+                  </label>
+                </div>
+                </p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <label class="input-group-text" for="size">Age</label>
+                </div>
+                <select class="custom-select" id="selectAge">
+                  <option selected value="">Choose...</option>
+                  <option value="Baby">Baby</option>
+                  <option value="Young">Young</option>
+                  <option value="Adult">Adult</option>
+                  <option value="Senior">Senior</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <label class="input-group-text" for="size">Size</label>
+                </div>
+                <select class="custom-select" id="selectSize">
+                  <option selected value="">Choose...</option>
+                  <option value="Small">Small</option>
+                  <option value="Medium">Medium</option>
+                  <option value="Large">Large</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="row" style="margin-bottom:20px">
+              <button type="submit" class="btn btn-warning btn-lg mb-2" id="searchBtn">FIND A FRIEND!</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div> <!-- END OF SEARCH BAR DIVS-->
+  
+    <div class="row animalBox">
+       <!--VALUES TO INPUT IS IN RESULTS OF AJAX CALL IN TEST.JS-->
+       <!--BEGINNING OF PET CARD-->
+     
+    </div><!-- END OF ANIMALBOX DIVS-->
+
+<!--END OF DIV CONTAINER-->
+</div>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script type="text/javascript" src="./js/search.js"></script>
+
+
+</body>
+
+</html>
